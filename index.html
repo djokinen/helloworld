@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+	<script>
+		$(function () {
+			tinymce.init({
+				selector: "textarea.tinymce",
+				plugins: "code link table",
+				menubar: false,
+				statusbar: false,
+				toolbar_items_size: "small",
+				toolbar: "formatselect | bold italic | bullist numlist | link table | code"
+			});
+		});
+	</script>
+	<script src="/script/core.js"></script>
+</head>
+<body>
+	<form>
+		<textarea class="tinymce"></textarea>
+	</form>
+</body>
+</html>
